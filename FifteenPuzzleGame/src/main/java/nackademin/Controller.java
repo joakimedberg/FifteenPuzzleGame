@@ -13,12 +13,20 @@ public class Controller implements Initializable {
 	
 	@FXML
 	private Button pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, pos10, pos11, pos12, pos13, pos14, pos15, pos16;
+	@FXML
+	private Button new_game;
 	
 	@FXML
 	private void moveTile(ActionEvent event) {
 		String nr = ( (Button)event.getSource() ).getText();
 		board.moveTile(Integer.valueOf(nr));
 		populate();		
+	}
+	
+	@FXML
+	private void newGame(ActionEvent event) {
+		board = new Board();
+		populate();
 	}
 		
 	@Override

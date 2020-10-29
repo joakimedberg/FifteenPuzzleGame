@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
 <BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nackademin.Controller">
@@ -41,5 +42,11 @@
          </children>
       </GridPane>
    </center>
+   <top>
+      <HBox prefHeight="28.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="new_game" mnemonicParsing="false" onAction="#newGame" text="NYTT SPEL" />
+         </children>
+      </HBox>
+   </top>
 </BorderPane>
-
