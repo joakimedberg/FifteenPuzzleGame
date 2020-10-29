@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 
 public class Controller implements Initializable {
@@ -15,17 +16,24 @@ public class Controller implements Initializable {
 	private Button pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, pos10, pos11, pos12, pos13, pos14, pos15, pos16;
 	@FXML
 	private Button new_game;
+	@FXML
+	private Label result;
 	
 	@FXML
 	private void moveTile(ActionEvent event) {
 		String nr = ( (Button)event.getSource() ).getText();
 		board.moveTile(Integer.valueOf(nr));
 		populate();		
+		
+		if (board.isGameCompleted()) {
+			result.setText("Grattis! Du vann!");
+		}
 	}
 	
 	@FXML
 	private void newGame(ActionEvent event) {
 		board = new Board();
+		result.setText("");
 		populate();
 	}
 		
