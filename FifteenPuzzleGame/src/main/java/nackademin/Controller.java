@@ -51,7 +51,79 @@ public class Controller implements Initializable {
 		pos14.setText(String.valueOf(board.getBoard().get(13)));
 		pos15.setText(String.valueOf(board.getBoard().get(14)));
 		pos16.setText(String.valueOf(board.getBoard().get(15))); 
+		
+		setColorOfMissingTile();
 	}
 	
+private void setColorOfMissingTile () {
+		
+		String color = "-fx-text-fill: #666666; -fx-background-color: #666666; ";
+				
+		pos1.setStyle("");
+		pos2.setStyle("");
+		pos3.setStyle("");
+		pos4.setStyle("");
+		pos5.setStyle("");
+		pos6.setStyle("");
+		pos7.setStyle("");
+		pos8.setStyle("");
+		pos9.setStyle("");
+		pos10.setStyle("");
+		pos11.setStyle("");
+		pos12.setStyle("");
+		pos13.setStyle("");
+		pos14.setStyle("");
+		pos15.setStyle("");
+		pos16.setStyle("");
+		
+		if (pos1.getText().equals("0")) {
+			pos1.setStyle(color);
+		}
+		else if (pos2.getText().equals("0")) {
+			pos2.setStyle(color);
+		}
+		else if (pos3.getText().equals("0")) {
+			pos3.setStyle(color);
+		}
+		else if (pos4.getText().equals("0")) {
+			pos4.setStyle(color);
+		}
+		else if (pos5.getText().equals("0")) {
+			pos5.setStyle(color);
+		}
+		else if (pos6.getText().equals("0")) {
+			pos6.setStyle(color);
+		}
+		else if (pos7.getText().equals("0")) {
+			pos7.setStyle(color);
+		}
+		else if (pos8.getText().equals("0")) {
+			pos8.setStyle(color);
+		}
+		else if (pos9.getText().equals("0")) {
+			pos9.setStyle(color);
+		}
+		else if (pos10.getText().equals("0")) {
+			pos10.setStyle(color);
+		}
+		else if (pos11.getText().equals("0")) {
+			pos11.setStyle(color);
+		}
+		else if (pos12.getText().equals("0")) {
+			pos12.setStyle(color);
+		}
+		else if (pos13.getText().equals("0")) {
+			pos13.setStyle(color);
+		}
+		else if (pos14.getText().equals("0")) {
+			pos14.setStyle(color);
+		}
+		else if (pos15.getText().equals("0")) {
+			pos15.setStyle(color);
+		}
+		else if (pos16.getText().equals("0")) {
+			pos16.setStyle(color);
+		}	
+	}
 
 }
