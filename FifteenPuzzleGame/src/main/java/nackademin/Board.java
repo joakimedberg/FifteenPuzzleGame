@@ -50,7 +50,6 @@ public class Board {
 		}else if (board.get(9) != 10) {
 			return false;
 		}else if (board.get(10) != 11) {
-			System.out.println(10);
 			return false;
 		}else if (board.get(11) != 12) {
 			return false;
